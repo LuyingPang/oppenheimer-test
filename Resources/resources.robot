@@ -3,10 +3,6 @@ Library    OperatingSystem
 Library    RequestsLibrary
 
 *** Keywords ***
-# Log my specific username and password 
-#     [Arguments]    ${username}    ${password}
-#     Log    ${username}
-#     Log    ${password}
 
 Log RestAPI Response to Console
     [Arguments]    ${response}
@@ -20,8 +16,3 @@ Clear Database
 
 *** Variables ***
 ${BASE_URL}    http://localhost:8080
-# ${MY-VARIAVLE}    my first variable
-
-# @{LIST}    test1    test2    test 3
-
-# &{DICTIONARY}    username=testuser    password=demo
