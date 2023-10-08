@@ -6,6 +6,7 @@ Library    ../Resources/CalculateRelief.py
 *** Test Cases ***
 Insert a single record of working class hero into database via API
     [Tags]    userstory1
+    Clear Database
     ${body}=    Create Dictionary    birthday=12121991    gender=M    name=heroTwo    natid=123456    salary=123456    tax=1234
     ${headers}=    Create Dictionary    Content-Type=application/json   
     Log To Console    ${body}
@@ -22,6 +23,7 @@ Insert a single record of working class hero into database via API
 
 Insert multiple records of working class heros into database via API
     [Tags]    userstory2
+    Clear Database
     ${hero1}=    Create Dictionary    birthday=12121991    gender=M    name=heroTwo    natid=123456    salary=123456    tax=1234
     ${hero2}=    Create Dictionary    birthday=12121991    gender=M    name=heroTwo    natid=123456    salary=123456    tax=1234
     ${hero3}=    Create Dictionary    birthday=12121991    gender=M    name=heroTwo    natid=123456    salary=123456    tax=1234
@@ -85,7 +87,6 @@ Query the amount of tax relief
     Clear Database
 
     
-
 
 Button to dispense tax relief
     [Tags]    userstory5
